@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send to Obsidian</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #info {
+            margin-bottom: 20px;
+        }
+        .button-check {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-style: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:#000000;
+            cursor: pointer;
+            border: 1px solid #1566d0;
+            border-radius: 5px;
+            height: 40%;
+            width: 50%;
+            background-color: #00ffd0;
+        }
+        .button-check:hover {
+            background-color: #00ffdd92;
+        }
+
+        .button-send {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-style: italic;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:#00ffd0;
+            cursor: pointer;
+            border: 1px solid #c70000;
+            border-radius: 5px;
+            height: 40%;
+            width: 50%;
+            background-color: #000000;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <p>Click the button to send the current page's details to Obsidian.</p>
+    </div>
+    <div class="container">
+        <button id="checkPage" class="button-check">Check Page</button>
+    </div>
+    <div class="container">
+        <button id="sendButton" class="button-send">Send via server</button>
+    </div>
+    <div class="container">
+        <button id="sendVault" class="button-send">Send to vault url</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
